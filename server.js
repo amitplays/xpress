@@ -8,7 +8,8 @@ app.use(express.json());
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/newapp', {
+// mongoose.connect('mongodb://localhost/newapp', {
+mongoose.connect('mongodb+srv://ams:admin@cluster0.vvkri7p.mongodb.net', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('MongoDB Connected'))
