@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
-app.get('/get', (req,res) => {
+app.get('/', (req,res) => {
   res.send("Hello World ! ")
 })
 
